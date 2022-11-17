@@ -1,146 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ian Avelar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <div class="container bg-img">
+      <div class="header">
+        <div class="logo">
+          <a href="#">Avelar<span>.</span></a>
+        </div>
+        <div class="menubar">
+          <ul class="menu">
+            <li><a class="active" href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="app-text">
+          <h6>Hello, my name is</h6>
+          <h2>Ian Avelar</h2>
+          <h3>Web Developer</h3>
+          <p>Problem? Here is the solution!</p>
+          <p>
+            Passionate about web development, I always seek to evolve and learn
+            even more about this domain. Determination, good humor and
+            discipline are what I am.
+          </p>
+          <div class="cv-btn">
+            <a href="./pdf/cv_2022.pdf" download
+              ><i class="fa-solid fa-cloud-arrow-down"></i> Download CV</a
+            >
+          </div>
+        </div>
+      </div>
+      <div id="quick-links" class="quick-links">
+        <ul>
+          <li>
+            <a id="experience" href="#">
+              <i class="fa-solid fa-briefcase"></i>
+              <p>Experience</p>
+            </a>
+          </li>
+          <li>
+            <a id="studies" href="#">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <p>Studies</p>
+            </a>
+          </li>
+          <li>
+            <a id="skills" href="#">
+              <i class="fa-solid fa-code"></i>
+              <p>Skills</p>
+            </a>
+          </li>
+        </ul>
+        <!--Timeline carousel-->
+        <section class="timeline-carousel">
+          <h1>History timeline</h1>
+          <div
+            class="timeline-carousel__item-wrapper"
+            data-js="timeline-carousel"
+          >
+            <!--Timeline item-->
+            <div class="timeline-carousel__item">
+              <div class="timeline-carousel__image">
+                <div
+                  class="media-wrapper media-wrapper--overlay"
+                  style="
+                    background: url('https://www.historyonthenet.com/wp-content/uploads/2016/12/135151-004-0D4D550E.jpg')
+                      center center;
+                    background-size: cover;
+                  "
+                ></div>
+              </div>
+              <div class="timeline-carousel__item-inner">
+                <span class="year">1914</span>
+                <span class="month">June 28</span>
+                <p>
+                  Assassination of Archduke Franz Ferdinand of Austria, heir to
+                  the Austro-Hungarian throne, who was killed in Sarajevo along
+                  with his wife Duchess Sophie by Bosnian Serb Gavrilo Princip.
+                </p>
+                <a href="#" class="read-more">Read more</a>
+              </div>
+            </div>
+            <!--/Timeline item-->
 
-<head>
+            <!--Timeline item-->
+            <div class="timeline-carousel__item">
+              <div class="timeline-carousel__image">
+                <div
+                  class="media-wrapper media-wrapper--overlay"
+                  style="
+                    background: url('http://factsforkids.net/wp-content/uploads/2013/09/13.jpg')
+                      center center;
+                    background-size: cover;
+                  "
+                ></div>
+              </div>
+              <div class="timeline-carousel__item-inner">
+                <div class="pointer"></div>
+                <span class="month">July 5 </span>
+                <p>
+                  Austria-Hungary seeks German support for a war against Serbia
+                  in case of Russian militarism. Germany gives assurances of
+                  support.
+                </p>
+                <a href="#" class="read-more">Read more</a>
+              </div>
+            </div>
+            <!--/Timeline item-->
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+            <!--Timeline item-->
+            <div class="timeline-carousel__item">
+              <div class="timeline-carousel__image">
+                <div
+                  class="media-wrapper media-wrapper--overlay"
+                  style="
+                    background: url('https://cdn-images-1.medium.com/max/2000/1*tjpdoOeFp6PfczMjqh6JEA.jpeg')
+                      center center;
+                    background-size: cover;
+                  "
+                ></div>
+              </div>
+              <div class="timeline-carousel__item-inner">
+                <span class="year">1915</span>
+                <span class="month">January 2</span>
+                <p>
+                  The Russian offensive in the Carpathians begins. It will
+                  continue until April 12.
+                </p>
+                <a href="#" class="read-more">Read more</a>
+              </div>
+            </div>
+            <!--/Timeline item-->
 
-  <title>Ian Avelar</title>
+            <!--Timeline item-->
+            <div class="timeline-carousel__item">
+              <div class="timeline-carousel__image">
+                <div
+                  class="media-wrapper media-wrapper--overlay"
+                  style="
+                    background: url('https://ichef-1.bbci.co.uk/news/660/media/images/72349000/jpg/_72349652_generals-on-horseback.jpg')
+                      center center;
+                    background-size: cover;
+                  "
+                ></div>
+              </div>
+              <div class="timeline-carousel__item-inner">
+                <div class="pointer"></div>
+                <span class="month">January 18–19 </span>
+                <p>Battle of Jassin.</p>
+                <a href="#" class="read-more">Read more</a>
+              </div>
+            </div>
+            <!--/Timeline item-->
 
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <!--Timeline item-->
+            <div class="timeline-carousel__item">
+              <div class="timeline-carousel__image">
+                <div
+                  class="media-wrapper media-wrapper--overlay"
+                  style="
+                    background: url('https://thechive.files.wordpress.com/2014/05/world-war-1-photography-30.jpg?quality=85&strip=info&w=550')
+                      center center;
+                    background-size: cover;
+                  "
+                ></div>
+              </div>
+              <div class="timeline-carousel__item-inner">
+                <span class="year">1916</span>
+                <span class="month">January 5–17</span>
+                <p>
+                  Austro-Hungarian offensive against Montenegro, which
+                  capitulates.
+                </p>
+                <a href="#" class="read-more">Read more</a>
+              </div>
+            </div>
+            <!--/Timeline item-->
 
-  <!-- Custom Fonts -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+            <!--Timeline item-->
+            <div class="timeline-carousel__item">
+              <div class="timeline-carousel__image">
+                <div
+                  class="media-wrapper media-wrapper--overlay"
+                  style="
+                    background: url('https://kidskonnect.com/wp-content/uploads/2010/10/Approaching_Omaha.jpg')
+                      center center;
+                    background-size: cover;
+                  "
+                ></div>
+              </div>
+              <div class="timeline-carousel__item-inner">
+                <div class="pointer"></div>
+                <span class="month">January 6–7 </span>
+                <p>Battle of Mojkovac.</p>
+                <a href="#" class="read-more">Read more</a>
+              </div>
+            </div>
+            <!--/Timeline item-->
+          </div>
+        </section>
+        <!--Timeline carousel-->
 
-  <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-
-</head>
-
-<body id="page-top">
-
-  <!-- Navigation -->
-  <a class="menu-toggle rounded" href="#">
-    <i class="fas fa-bars"></i>
-  </a>
-  <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">Ian Avelar</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">About me</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Contact</a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Header -->
-  <header class="masthead d-flex">
-    <div class="container text-center my-auto">
-      <h1 class="mb-1">Ian Avelar Peixoto</h1>
-      <h3 class="mb-5">
-        <em>Student of Electrical Engineering and web developer.</em>
-      </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-    </div>
-    <div class="overlay"></div>
-  </header>
-
-  <!-- About -->
-  <section class="content-section bg-light" id="about">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h2>About me...</h2>
-          <p class="lead mb-5">I am Ian, an Electrical Engeeniring student at the Federal University of Uberlândia. I am going to live a year doing academic mobility at Polytech Paris-Sud, France. I have created a great passion for web developping and have deepened my knowledge in that.</p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="img/pdf/CV.pdf" download>CV</a>
+        <div class="link">
+          <a href="https://codepen.io/microfront/pens/public/" target="_blank">
+            <span class="fa fa-codepen"></span>my other Pens</a
+          >
+        </div>
+      </div>
+      <div class="social-box">
+        <div class="follow-label">Follow me</div>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/ian-avelar-peixoto-5a30b117a/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/Avelarian"
+            ><i class="fa-brands fa-square-github"></i
+          ></a>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Portfolio -->
-  <section class="content-section" id="portfolio">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">Portfolio</h3>
-        <h2 class="mb-5">Recent Projects</h2>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/Avelarian/tesouraria-pet">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Angular 7, NodeJS and MongoDB project.</h2>
-                <p class="mb-0">Automation of the treasury system.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/project1.jpeg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/Avelarian/instagram-replica">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>ReactJS, NodeJS and MongoDB project.</h2>
-                <p class="mb-0">Instagram replica.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/project2.jpeg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer text-center">
-    <div class="container">
-      <ul class="list-inline mb-5">
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/ian-avelar-peixoto-5a30b117a/">
-            <i class="icon-social-linkedin"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="https://github.com/Avelarian">
-            <i class="icon-social-github"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/stylish-portfolio.min.js"></script>
-
-</body>
-
+  </body>
 </html>
